@@ -1,0 +1,89 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "86UPsiIl22iT"
+      },
+      "source": [
+        "%%rdf turtle\n",
+        "\n",
+        "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n",
+        "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n",
+        "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n",
+        "@prefix osadm: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .\n",
+        "@prefix ex: <http://example.com/> .\n",
+        "\n",
+        "       \n",
+        "\n",
+        "#Kelurahan \n",
+        "\n",
+        "ex:Cideng\n",
+        "  a osadm:Ward, ex:kelurahan ;\n",
+        "  ex:berkecamatan ex:Gambir ;\n",
+        "  ex:JumlahRT \"114\"^^xsd:int ;\n",
+        "  ex:JumlahRW \"10\"^^xsd:int .\n",
+        "\n",
+        "ex:KamalMuara\n",
+        "  a osadm:Ward, ex:kelurahan ;\n",
+        "  ex:berkecamatan ex:Penjaringan ;\n",
+        "  ex:JumlahRT \"44\"^^xsd:int ;\n",
+        "  ex:JumlahRW \"6\"^^xsd:int .\n",
+        "\n",
+        "ex:TuguUtara\n",
+        "  a osadm:Ward, ex:kelurahan ;\n",
+        "  ex:berkecamatan ex:Koja ;\n",
+        "  ex:JumlahRT \"214\"^^xsd:int ;\n",
+        "  ex:JumlahRW \"19\"^^xsd:int .\n",
+        "\n",
+        "#Kecamatan\n",
+        "\n",
+        "ex:Gambir\n",
+        "  a ex:kecamatan ;\n",
+        "  osadm:district ex:JakartaPusat .\n",
+        "\n",
+        "ex:Penjaringan\n",
+        "  a ex:kecamatan ;\n",
+        "  osadm:district ex:JakartaUtara .\n",
+        "\n",
+        "ex:Koja\n",
+        "  a ex:kecamatan ;\n",
+        "  osadm:district ex:JakartaUtara .\n",
+        "\n",
+        "#Kabupaten  \n",
+        "\n",
+        "ex:JakartaPusat\n",
+        "  a osadm:District, ex:kabupaten ;\n",
+        "  ex:berprovinsi ex:DKIJakarta .\n",
+        "\n",
+        "ex:JakartaUtara\n",
+        "  a osadm:District, ex:kabupaten ;\n",
+        "  ex:berprovinsi ex:DKIJakarta .\n",
+        "\n",
+        "#Provinsi\n",
+        "\n",
+        "ex:DKIJakarta\n",
+        "  a ex:provinsi .\n",
+        "\n",
+        "#display the table"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
