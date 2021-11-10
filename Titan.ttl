@@ -1,0 +1,58 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix osadm: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix ex: <http://example.com/> .
+
+       
+
+#Kelurahan 
+
+ex:Cideng
+  a osadm:Ward, ex:kelurahan ;
+  ex:berkecamatan ex:Gambir ;
+  ex:JumlahRT "114"^^xsd:int ;
+  ex:JumlahRW "10"^^xsd:int .
+
+ex:KamalMuara
+  a osadm:Ward, ex:kelurahan ;
+  ex:berkecamatan ex:Penjaringan ;
+  ex:JumlahRT "44"^^xsd:int ;
+  ex:JumlahRW "6"^^xsd:int .
+
+ex:TuguUtara
+  a osadm:Ward, ex:kelurahan ;
+  ex:berkecamatan ex:Koja ;
+  ex:JumlahRT "214"^^xsd:int ;
+  ex:JumlahRW "19"^^xsd:int .
+
+#Kecamatan
+
+ex:Gambir
+  a ex:kecamatan ;
+  osadm:district ex:JakartaPusat .
+
+ex:Penjaringan
+  a ex:kecamatan ;
+  osadm:district ex:JakartaUtara .
+
+ex:Koja
+  a ex:kecamatan ;
+  osadm:district ex:JakartaUtara .
+
+#Kabupaten  
+
+ex:JakartaPusat
+  a osadm:District, ex:kabupaten ;
+  ex:berprovinsi ex:DKIJakarta .
+
+ex:JakartaUtara
+  a osadm:District, ex:kabupaten ;
+  ex:berprovinsi ex:DKIJakarta .
+
+#Provinsi
+
+ex:DKIJakarta
+  a ex:provinsi .
+
+#display the table
