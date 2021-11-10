@@ -36,7 +36,6 @@ ex:Koja
   a ex:kecamatan ;
   osadm:district ex:JakartaUtara .
 
-#Kabupaten  
 
 ex:JakartaPusat
   a osadm:District, ex:kabupaten ;
